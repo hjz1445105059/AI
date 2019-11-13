@@ -1,0 +1,87 @@
+.pages{
+  background: #c9d0d8;
+}
+.face{
+  background: white;
+  height: 500rpx;
+  margin: 0rpx 25rpx;
+  text-align: center;
+  overflow: hidden;
+}
+.face image{
+  width: 500rpx;
+  height: 500rpx;
+}
+/* 属性值 */
+.result{
+  background: white;
+  padding: 15rpx;
+}
+.result-text{
+  font-size: 45rpx;
+  color: #00a4ff;
+}
+/* 识别结果 */
+.from{
+  display: flex;
+  padding: 23rpx 25rpx;
+}
+.from text{
+  font-size: 30rpx;
+  margin-right: 20rpx;
+}
+.from .sex{
+  color: red;
+}
+.from:nth-child(odd){
+  background: #f5f5f5;
+}
+/* 选择图片 */
+.btn{
+  position: fixed;
+  bottom: 5rpx;
+  width: 100%;
+}
+.btn button{
+ width: 350rpx;
+ border-radius: 70rpx;
+}
+/* 动画 */
+.animation{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 500rpx;
+}
+.animation-list{
+width: 100%;
+height: 450rpx;
+background: linear-gradient(to bottom,rgba(216,179,255,0),rgba(216,179,255,1));
+position: relative;
+top: -600rpx;
+animation: myfist 2s linear 1s infinite alternate;
+}
+@keyframes myfist{
+  0%{
+    background: linear-gradient(to bottom,rgba(216,179,255,0),rgba(216,179,255,1));
+    left: 0;
+    top:-600rpx;
+  }
+  25%{
+    left: 0;
+    top: 50rpx;
+  }
+  50%{
+    left: 0;
+    top: 50rpx;
+  }
+  75%{
+    left: 0;
+    top: 50rpx;
+  }
+  100%{
+    left: 0;
+    top: -600rpx;
+  }
+}

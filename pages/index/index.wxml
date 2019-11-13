@@ -1,0 +1,50 @@
+<view class="animation" wx:if="{{animation}}">
+<view class="animation-list"></view>
+</view>
+
+
+<view class="pages">
+<view class="face">
+<image src="{{images}}" mode="widthFix"></image>
+</view>
+</view>
+<!-- 识别结果 -->
+<view class="result">
+<text class="result-text">识别结果</text>
+</view>
+<!-- 属性值 -->
+<view wx:if="{{faceend}}">
+<view class="from">
+<text>性别：</text>
+<text class="sex">{{gender}}</text>
+</view>
+<view class="from">
+<text>年龄：</text>
+<text class="sex">{{age}}</text>
+</view>
+<view class="from">
+<text>表情：</text>
+<text class="sex">{{emotion}}</text>
+</view>
+<view class="from">
+<text>颜值：</text>
+<text class="sex">{{scrore}}</text>
+</view>
+<view class="from">
+<text>情绪：</text>
+<text class="sex">{{expression}}</text>
+</view>
+<view class="from">
+<text>眼镜：</text>
+<text class="sex">{{glasses}}</text>
+</view>
+</view>
+<!-- 没有检测人脸 -->
+<view wx:else>
+没有检测到人脸
+</view>
+
+<!-- 上传图片 -->
+<view class="btn">
+<button type="primary" bindtap="faceImage">选择图片</button>
+</view>
